@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const Login = () => {
-    const { signIn } = useContext(AuthContext);
+    const { signIn } = useContext(AuthContext );
     const navigate = useNavigate();
     const location = useLocation();
     console.log('login page location', location)
